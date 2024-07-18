@@ -1,30 +1,3 @@
-# from rest_framework import viewsets
-# from rest_framework.response import Response
-# from rest_framework import status
-# from .models import Recipe
-# from .serializers import RecipeSerializer
-#
-#
-# class RecipeViewSet(viewsets.ModelViewSet):
-#     queryset = Recipe.objects.all()
-#     serializer_class = RecipeSerializer
-#
-#     def create(self, request, *args, **kwargs):
-#         serializer = self.get_serializer(data=request.data)
-#         if serializer.is_valid():
-#             self.perform_create(serializer)
-#             headers = self.get_success_headers(serializer.data)
-#             return Response({
-#                 "message": "Recipe successfully created!",
-#                 "recipe": [serializer.data]
-#             }, status=status.HTTP_200_OK, headers=headers)
-#         else:
-#             return Response({
-#                 "message": "Recipe creation failed!",
-#                 "required": "title, making_time, serves, ingredients, cost"
-#             }, status=status.HTTP_200_OK)
-
-
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
